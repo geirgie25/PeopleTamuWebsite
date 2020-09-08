@@ -4,51 +4,123 @@
 <title>TEST</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<style>
-	.t {
-		background-color: lightgrey;
-		width: 150px;
-		border: 10px solid #660000;
-		padding: 10px;
-		margin: 20px;
+	<style>
+		.t {
+			background-color: lightgrey;
+			width: 150px;
+			border: 10px solid #660000;
+			padding: 10px;
+			margin: 20px;
+			
+			text-align: center;
+			vertical-align: middle;
+		}
 		
-		text-align: center;
-		vertical-align: middle;
-	}
+		.paragraphSetup {
+			padding: 10px;
+			margin: 150px;
+			
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		<!-- Background -->
+		.bg {
+			background-color: #cccccc;
+			height: 500px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
 	
-	.paragraphSetup {
-		padding: 10px;
-		margin: 150px;
+	
 		
-		text-align: center;
-		vertical-align: middle;
-	}
-</style>
+		<!-- Navigation Bar Style -->
+		.navigationBar {
+			overflow: hidden;
+			background-color: #000000;
+		}
+
+		.navigationBar a {
+			float: left;
+			color: #990000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.navigationBar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navigationBar a.active {
+			background-color: #990000;
+			color: white;
+		}
+		
+		
+		
+		<!-- Text Box Style -->
+		.textbox {
+			border: 10px solid black;
+			padding: 10px;
+		}
+		
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #000000;
+		}
+		
+		.p1 {
+			text-indent: 50px;
+			text-align: center;
+			letter-spacing: 3px;
+		}
+	
+	
+	</style>
+
 </head>
 
-<body style="background-color:grey;">
+<body class="bg">
 
-
-<h1 style="text-align:center"><font color="#990000">ABOUT ME</font></h1>
-
-<p style="text-align:center">
-	<img src="me_lowrez.jpg" alt="Me">
-</p>
-
-<div class="paragraphSetup">
-	<font color="#000000">Howdy! My name is William Thomas Pierce, but I go by Will Thomas. I am currently a Junior Computer Science student at Texas A&M College Station with a ~3.86 GPA. I am well versed in Java, C#, C++, and Python with experience in HTML, C, and Haskell. I have a tremendous amount of experience with both leadership and general team positions in projects, most notably games. I led a team to 2nd place at Chillenium 2019, the largest collegiate game jam in the world! I competed in Itch.io's Minijam 14 - elements, placing 1st in graphics and sound and 5th overall. Finally, I led a team to Texas A&M's very own corona virus jam placing 5th overall. Working on these projects taught me how to lead a team and how NOT to lead a team. I made many mistakes at first because we had no structure to keep us in sync and this would prevent us from being as efficient as possible as well as causing many communication errors. I learned how important deadlines, schedules, and proper communication is to a project and am still improving on this skill today! I also learned how to shut up! The people in my team all had different skill sets than me, even if we both had the same role, so I learned how to take a backseat and let others lead.  You can find all these projects on my portfolio page!</font>
+	<!-- Navigation Bar -->
+	<div class="navigationBar">
+		<a href="index.html">Home</a>
+		<a class="active" href="AboutMe.html">About me</a>
+		<a href="Qualifications.html">Qualifications</a>
+		<a href="Portfolio.html">Portfolio</a>
+		<a href="Service.html">Service</a>
+		<a href="Contact.html">Contact</a>
+	</div>
+	
 	<br>
 	<br>
-	<font color="#000000">I am currently working at Q2 College prep as a math and reading/writing tutor and we are looking to expand! There I have learned to work under a manager and follow their guidelines, while also having to develop my own lesson plans and be responsible for myself and my students. I also worked as a vocal instructor at Friends of North Richmond for about a year early into my high school career. There I taught a group of about 10, underprivileged children how to sing under the tutelage of Cornelia Post, and that laid the groundwork for the skills I would gain later.</font>
 	<br>
-</div>
-
-
-<div class="t" style="width:800px; margin:0 auto;">
-	<font color="#990000"><a href="Portfolio.html">Portfolio</font></a><br>
-	<font color="#990000"><a href="Contact.html">Contact</font></a>
-	<br><font color="#990000"><a href="index.html">back</font></a>
-</div>
+	<br>
+	
+	<!-- Textbox -->
+	<div class="textbox">
+		<h1>About Me</h1>
+		
+		<p style="text-align:center">
+			<img src="me_lowrez.jpg" alt="Me">
+		</p>
+		
+		<p class="p1">
+			Howdy! My name is William Thomas Pierce, but I go by Will Thomas. I am currently a Junior Computer Science student at Texas A&M College Station with a ~3.86 GPA. I am well versed in Java, C#, C++, and Python with experience in HTML, C, and Haskell. I have a tremendous amount of experience with both leadership and general team positions in projects, most notably games. I led a team to 2nd place at Chillenium 2019, the largest collegiate game jam in the world! I competed in Itch.io's Minijam 14 - elements, placing 1st in graphics and sound and 5th overall. Finally, I led a team to Texas A&M's very own corona virus jam placing 5th overall.
+			<br>
+			<br>
+			Working on these projects taught me how to lead a team and how NOT to lead a team. I made many mistakes at first because we had no structure to keep us in sync and this would prevent us from being as efficient as possible as well as causing many communication errors. I learned how important deadlines, schedules, and proper communication is to a project and am still improving on this skill today! I also learned how to shut up! The people in my team all had different skill sets than me, even if we both had the same role, so I learned how to take a backseat and let others lead.  You can find all these projects on my portfolio page!
+			<br>
+			<br>
+			I am currently working at Q2 College prep as a math and reading/writing tutor and we are looking to expand! There I have learned to work under a manager and follow their guidelines, while also having to develop my own lesson plans and be responsible for myself and my students. I also worked as a vocal instructor at Friends of North Richmond for about a year early into my high school career. There I taught a group of about 10, underprivileged children how to sing under the tutelage of Cornelia Post, and that laid the groundwork for the skills I would gain later.
+		</p>
+	</div>
 
 </body>
 </html>

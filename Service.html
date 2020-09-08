@@ -4,43 +4,114 @@
 <title>TEST</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-<style>
-	.t {
-		background-color: lightgrey;
-		width: 150px;
-		border: 10px solid #660000;
-		padding: 10px;
-		margin: 20px;
+	<style>
+		.t {
+			background-color: lightgrey;
+			width: 150px;
+			border: 10px solid #660000;
+			padding: 10px;
+			margin: 20px;
+			
+			text-align: center;
+			vertical-align: middle;
+		}
 		
-		text-align: center;
-		vertical-align: middle;
-	}
+		.paragraphSetup {
+			padding: 10px;
+			margin: 150px;
+			
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		<!-- Background -->
+		.bg {
+			background-color: #cccccc;
+			height: 500px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
 	
-	.paragraphSetup {
-		padding: 10px;
-		margin: 150px;
+	
 		
-		text-align: center;
-		vertical-align: middle;
-	}
-</style>
+		<!-- Navigation Bar Style -->
+		.navigationBar {
+			overflow: hidden;
+			background-color: #000000;
+		}
+
+		.navigationBar a {
+			float: left;
+			color: #990000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.navigationBar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navigationBar a.active {
+			background-color: #990000;
+			color: white;
+		}
+		
+		
+		
+		<!-- Text Box Style -->
+		.textbox {
+			border: 10px solid black;
+			padding: 10px;
+		}
+		
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			color: #000000;
+		}
+		
+		.p1 {
+			text-indent: 50px;
+			text-align: center;
+			letter-spacing: 3px;
+		}
+	
+	
+	</style>
+	
 </head>
 
-<body style="background-color:grey;">
+<body class="bg">
 
-<h1 style="text-align:center"><font color="#990000">Service</font></h1>
-
-<div class="paragraphSetup">
-	<font color="#000000">This page is a work in progress.</font>
-</div>
-
-<div class="t" style="width:800px; margin:0 auto;">
-	<font color="#990000"><a href="AboutMe.html">About me</font></a><br>
-	<font color="#990000"><a href="Qualifications.html">Qualifications</font></a><br>
-	<font color="#990000"><a href="Portfolio.html">Portfolio</font></a><br>
-	<font color="#990000"><a href="Contact.html">Contact</font></a>
-	<br><font color="#990000"><a href="index.html">back</font></a>
-</div>
+	<!-- Navigation Bar -->
+	<div class="navigationBar">
+		<a href="index.html">Home</a>
+		<a class="active" href="AboutMe.html">About me</a>
+		<a href="Qualifications.html">Qualifications</a>
+		<a href="Portfolio.html">Portfolio</a>
+		<a href="Service.html">Service</a>
+		<a href="Contact.html">Contact</a>
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<!-- Textbox -->
+	<div class="textbox">
+	
+		<h1>Service</h1>
+	
+		<p class="p1">
+			WIP
+		</p>
+	</div>
 
 </body>
 </html>
