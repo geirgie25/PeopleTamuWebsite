@@ -80,6 +80,22 @@
 			text-align: center;
 			letter-spacing: 3px;
 		}
+		
+		.column {
+			float: left;
+			width: 5%;
+			padding: 150px;
+		}
+		
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		.button1 {
+			background-color: #e60000;
+		}
 	
 	
 	</style>
@@ -110,27 +126,38 @@
 	
 		<p class="p1">
 			willthomaspierce@tamu.edu
+			<br>
+			<br>
+			<a href="mailto:willthomaspierce@tamu.edu"><button class="button1">Email Me</button></a>
 		</p>
-		<a href="https://www.linkedin.com/in/willthomaspierce/Service">
-			<img src="linkedin.png" alt="LI" width="50" height="50">
-		</a>
 		
-		<a href="https://github.com/geirgie25">
-			<img src="github.png" alt="GH" width="50" height="50">
-		</a>
-		
-		<a href="https://twitter.com/geirgie25">
-			<img src="twitter.png" alt="TW" width="50" height="50">
-		</a>
-		
-		<a href="https://soundcloud.com/geirgie25">
-			<img src="scloud.png" alt="TW" width="50" height="50">
-		</a>
-		
-		<a href="https://geirgie25.itch.io/">
-			<img src="itchio.png" alt="IO" width="50" height="50">
-		</a>
-		
+		<div class="row">
+			<div class="column">
+				<a href="https://www.linkedin.com/in/willthomaspierce/Service">
+					<img src="linkedin.png" alt="LI" width="50" height="50">
+				</a>
+			</div>
+			<div class="column">
+				<a href="https://github.com/geirgie25">
+					<img src="github.png" alt="GH" width="50" height="50">
+				</a>
+			</div>
+			<div class="column">	
+				<a href="https://twitter.com/geirgie25">
+					<img src="twitter.png" alt="TW" width="50" height="50">
+				</a>
+			</div>
+			<div class="column">	
+				<a href="https://soundcloud.com/geirgie25">
+					<img src="scloud.png" alt="TW" width="50" height="50">
+				</a>
+			</div>
+			<div class="column">	
+				<a href="https://geirgie25.itch.io/">
+					<img src="itchio.png" alt="IO" width="50" height="50">
+				</a>
+			</div>
+		</div>
 	</div>
 
 </body>
